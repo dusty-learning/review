@@ -10,3 +10,13 @@ function thing ([a, ...rest]) {
 }
 
 thing(data)
+
+const foo = {
+  bar: 'things'
+}
+const bar = 'something else'
+const { bar: baz, cool = '' } = foo
+
+console.log(bar)
+console.log(baz)
+console.log('cool:', cool)
