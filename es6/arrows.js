@@ -30,3 +30,9 @@ tmp.map(function (val) {
 
   return val + 1
 })
+
+const foo = a => b => a + b
+
+const add2 = foo(2)
+
+add2(2)
